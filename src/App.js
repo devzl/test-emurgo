@@ -162,7 +162,7 @@ class App extends Component {
     input = input.replace(/'/g, "\"")
 
     try {
-      let parsedInput =  JSON.parse(input)
+      let parsedInput = JSON.parse(input)
 
       theWorkerInstance.postMessage(parsedInput);
 
